@@ -1,6 +1,8 @@
 ---
 title: "ReproducibleResearch_Week2_Assignment"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r}
@@ -127,6 +129,7 @@ steps.int <- rbind(steps.int.weekday, steps.int.weekend)
 steps.int$weekend <- as.factor(steps.int$weekend)
 ggplot(steps.int, aes(interval, steps)) + geom_line() + facet_grid(weekend ~ .)
 ```
+
 
 
 
